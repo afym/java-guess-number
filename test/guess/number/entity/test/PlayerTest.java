@@ -15,9 +15,10 @@ public class PlayerTest {
 	}
 
 	@Test
-	public void testGetSet() {
+	public void testNameGetSet() {
 		Player player = new Player();
 		String name = "Angel";
 		player.setName(name);
+		assertTrue(name.equals(player.getName()));
 	}
 }
